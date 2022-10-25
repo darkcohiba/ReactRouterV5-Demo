@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <Switch>
           <Route exact path="/"> 
             <Home />
@@ -26,7 +26,7 @@ function App() {
             <Contact />
           </Route>
         </Switch>
-      {/* </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }
