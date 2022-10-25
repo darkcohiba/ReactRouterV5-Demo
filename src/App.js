@@ -14,19 +14,19 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
         <Switch>
           <Route exact path="/"> 
             <Home />
           </Route>
-          <Route path="/About"> 
-            <About /> 
+          <Route exact path="/about"> 
+            <About />
           </Route>
-          <Route path="/Contact">
-            <Contact /> 
+          <Route exact path="/contact"> 
+            <Contact />
           </Route>
         </Switch>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
     </div>
   );
 }
@@ -35,25 +35,51 @@ export default App;
 
 
 
-{/* <Switch>
-  <Route exact path="/">
-    {showCurrentBook ?
-      <BookDisplay book={currentBook} /> :
-      <Home onHandleDisplay={HandleDisplay} userAuthorized={userAuthorized} />}
-  </Route>
-  <Route exact path="/admin">
-    <Admin books={displayedBooks} setBooks={setBooks} adminAuthorized={adminAuthorized} />
-  </Route>
-  <Route exact path="/books">
-    {showCurrentBook ?
-      <BookDisplay book={currentBook} /> :
-      <Books userAuthorized={userAuthorized} onHandleDisplay={HandleDisplay} />}
-  </Route>
 
-  <Route exact path="/login">
-    <Login userAuthorized={userAuthorized} setUserAuthorized={setUserAuthorized} setAdminAuthorized={setAdminAuthorized} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <BrowserRouter>
+<Switch>
+  <Route exact path="/"> 
+    <Home />
   </Route>
-  <Route exact path="/signup">
-    <Signup />
+  <Route path="/About"> 
+    <About /> 
   </Route>
-</Switch> */}
+  <Route path="/Contact">
+    <Contact /> 
+  </Route>
+</Switch>
+</BrowserRouter> */}
